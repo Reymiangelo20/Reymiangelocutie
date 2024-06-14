@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(46, 40, 40);
+    font-family: Poppins, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    border: 1px solid black;
+    height: 500px;
+    width: 600px;
+    background: rgb(82, 72, 72);
+    border-radius: 10px;
+}
+
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+}
+
+.edit-profile{
+    position: relative;
+    margin: 10px;
+}
+
+.edit-profile label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    padding: 0 5px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+.edit-profile input{
+    height: 40px;
+    width: 220px;
+    outline: none;
+    padding: 0 10px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.edit-profile input:focus~label,
+.edit-profile input:valid~label{
+    top: 0;
+    background: rgb(82, 72, 72);
+    color: white;
+    font-size: 13px;
+}
+
+.edit-profile input:focus{
+    border: 1px solid white;
+}
+
+.profile{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#image{
+    border: 1px solid black;
+    height: 150px;
+    width: 200px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60%;
+    object-fit: cover;
+}
+
+.uploadbtn{
+    margin-left: 65%;
+}
+
+.profile label{
+    padding: 5px 10px 5px 10px;
+    border: 1px solid black;
+    margin-left: 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.profile label:hover{
+    background: rgb(102, 91, 91);
+}
+
+.profile input{
+    display: none;
+}
+
+.savebtn{
+    margin-top: 20px;
+    background: rgb(129, 115, 115);
+    color: white;
+    border: 1px solid black;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 40%;
+    cursor: pointer;
+}
+
+.savebtn:hover{
+    background: rgb(102, 91, 91);
+}

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body {
+    background: rgb(46, 40, 40);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+   
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+    transition: transform 0.3s; 
+}
+
+.navbar-nav .nav-link {
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover {
+    color: lightgray;
+    transform: scale(1.1);
+}
+
+.content-container {
+    text-align: center;
+    padding: 50px;
+    margin-top: 100px; 
+    opacity: 0; 
+    color: white;
+    animation: fadeIn 1s ease forwards;
+}
+
+
+.logo {
+    width: 100px;
+    position: absolute;
+    top: -15px;
+    left: -30px;
+    margin: 20px; 
+}
+
+.table-container {
+    position: fixed;
+    top: 420px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+    overflow-x: hidden; 
+    height: 520px;
+    width: 80%;
+    background: rgb(82, 72, 72);
+}
+
+.table {
+    height: auto;
+    border-collapse: collapse;
+    margin-right: 70px;
+    text-align: center;
+    width: 100%;
+    overflow-y: scroll; /
+}
+
+.table th,
+.table td {
+    
+    padding: 10px;
+    color: white;
+}
+
+.table thead {
+    position: sticky;
+    top: 0;
+    background: rgb(82, 72, 72);
+    z-index: 2;
+}
+
+.table tbody {
+    overflow-x: hidden;
+}
+
+table tr td{
+    text-transform: capitalize;
+}
+
+.email{
+    text-transform: lowercase;
+}
+
+.remove_modal {
+    position: fixed;
+    z-index: 999;
+    background: rgb(82, 72, 72);
+    color: white;
+    border: 1px solid black;
+    height: 200px;
+    width: 1000px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)scale(0.1);
+    border-radius: 10px;
+    visibility: hidden; 
+    transition: 0.5s;
+}
+
+
+.remove_modal-open{
+    transform: translate(-50%, -50%)scale(1);
+    visibility: visible;
+}
+
+.modal_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btnYes{
+    border: 1px solid black;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.btnYes:hover{
+    border: 1px solid black;
+}
+
+.btnNo{
+    border: 1px solid black;
+    width: 100px;
+    border-radius: 10px;
+    background: gray;
+    color: white;
+}
+
+.btnNo:hover{
+    background: rgb(75, 74, 74);
+}
+
+.table-container-open{
+    filter: blur(10px);
+    pointer-events: none;
+}
+
+.button{
+    text-align: center;
+}

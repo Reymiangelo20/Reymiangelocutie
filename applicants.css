@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(46, 40, 40);
+    font-family: Poppins, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+}
+
+.container{
+    background: rgb(83, 81, 81);
+    height: 600px;
+    width: 1500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+}
+
+.applicant_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin-left: 100px;
+    margin-top: 20px;
+    row-gap: 20px;
+}
+
+.applicant_info span{
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.email{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.applicant_images{
+    margin-top: 20px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.applicant_images label{
+    margin-left: 20px;
+}
+
+.profile_image{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_image img{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.profile_image img:hover{
+    transform: scale(0.8);
+}
+
+.valid_id{
+    display: flex;
+    flex-direction: column;
+}
+
+.valid_id img{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.valid_id img:hover{
+    transform: scale(0.8);
+}
+
+.business_permit{
+    display: flex;
+    flex-direction: column;
+}
+
+.business_permit img{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.business_permit img:hover{
+    transform: scale(0.8);
+}
+
+.resume{
+    display: flex;
+    flex-direction: column;
+}
+
+.resume a{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+    width: 150px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    background: rgb(129, 115, 115);
+}
+
+.resume a:hover{
+    background: rgb(102, 91, 91);
+}
+
+.button{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.accept{
+    height: 30px;
+    width: 100px;
+    background: rgb(132, 71, 194);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accept:hover{
+    background: rgb(80, 44, 116);
+}
+
+.declined{
+    height: 30px;
+    width: 100px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.declined:hover{
+    background: maroon;
+}
+
+.accept_modal{
+    position: absolute;
+    z-index: 999;
+    background: rgb(83, 81, 81);
+    height: 200px;
+    width: 400px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    transform: translate(0)scale(0.1);
+    visibility: hidden;
+    transition: 0.5s
+}
+
+.accept_modal-open{
+    transform: translate(0)scale(1);
+    visibility: visible;
+}
+
+.modal_info{
+    margin-top: 30px;
+}
+
+.modal_button{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btnYes{
+    height: 30px;
+    width: 100px;
+    background: rgb(172, 119, 119);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnYes:hover{
+    background: rgb(133, 94, 94);
+}
+
+.btnNo{
+    height: 30px;
+    width: 100px;
+    background: darkcyan;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnNo:hover{
+    background: rgb(4, 105, 105);
+}
+
+.container-open{
+    filter: blur(10px);
+    pointer-events: none;
+}
+
+.declined_modal{
+    position: absolute;
+    z-index: 999;
+    background: rgb(83, 81, 81);
+    height: 200px;
+    width: 400px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    transform: translate(0)scale(0.1);
+    visibility: hidden;
+    transition: 0.5s
+}
+
+.declined_modal-open{
+    transform: translate(0)scale(1);
+    visibility: visible;
+}
+
+.declined_btnYes{
+    height: 30px;
+    width: 100px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.declined_btnYes:hover{
+    background: maroon;
+}
+
+.closeProfile_modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 15px;
+    margin-top: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    animation: shake 2s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(30deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.closeProfile_modal:hover{
+    color: black;
+}
+
+.profilepic_modal{
+    position: absolute;
+    z-index: 999;
+    background: rgb(83, 81, 81);
+    height: 700px;
+    width: 1100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    transform: translate(0)scale(0.1);
+    visibility: hidden;
+    transition: 0.5s
+}
+
+
+.profilepic_modal-open{
+    transform: translate(0)scale(1);
+    visibility: visible;
+}
+
+.modal_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_image img{
+    height: 600px;
+    width: 1050px;
+    object-fit: fill;
+    border: 1px solid white;
+}
+
+.applicant_name{
+    text-transform: capitalize;
+}
+

@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: rgb(46, 40, 40);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+.container {
+    border: 1px solid black;
+    background: rgb(83, 81, 81);
+    height: 700px;
+    width: 900px;
+    margin: 0 auto; 
+    margin-top: 100px; 
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+hr {
+    border-color: white;
+}
+
+input {
+    color: white;
+    border: 1px solid black;
+    background: transparent;
+    width: 50%; 
+    margin-top: 70px;
+    padding: 8px; 
+    box-sizing: border-box; 
+}
+
+::placeholder{
+    color:white;
+    font-weight: bolder;
+}
+
+#complete{
+    margin-top: 300px;
+    margin-left: 290px;
+    padding: 5px 30px 5px 30px;
+    background: rgb(124, 111, 111);
+    color: white;
+    font-weight: bolder;
+}
+
+#complete:hover{
+    background: darkblue;
+    text-decoration: none;
+    color: white;
+}
+
+#cancel{
+    margin-top: 300px;
+    margin-left: 105px;
+    padding: 5px 30px 5px 18px;
+    background: rgb(124, 111, 111);
+    color: white;
+    font-weight: bolder;
+}
+
+#cancel:hover{
+    background: darkred;
+    text-decoration: none;
+    color: white;
+}
+
+.fullname{
+    position: absolute;
+    margin-top: 100px;
+    width: 350px;
+    margin-left: 40px;
+}
+
+.user{
+    position: absolute;
+    margin-top: 100px;
+    width: 350px;
+    margin-left: 500px;
+}
+
+.email{
+    position: absolute;
+    margin-top: 160px;
+    width: 350px;
+    margin-left: 40px;
+}
+
+.number{
+    position: absolute;
+    margin-top: 160px;
+    width: 350px;
+    margin-left: 500px;
+}
+
+.address{
+    position: absolute;
+    margin-top: 220px;
+    width: 350px;
+    margin-left: 40px;
+}
+
+.time{
+    position: absolute;
+    margin-top: 220px;
+    width: 350px;
+    margin-left: 500px;
+}
+
+
+.info{
+    margin-top: 80px;
+    margin-left: 350px;
+    border: 1px solid black;
+    width: 200px;
+    height: 150px;
+}
+
+.change{
+    color: white;
+    position: absolute;
+    margin-left: 45px;
+    margin-top: 165px;
+}
+#profilePicture{
+    margin-left: 10px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 180px;
+    height: 150px;
+}
+
+#profilePictureInput{
+    margin-top: 55px;
+    margin-left: 10px;
+}
+
+.file-input-container {
+   
+     width: 200px;
+     overflow: hidden; 
+     text-overflow: ellipsis;
+     white-space: nowrap; 
+    }
+
+#uploadLabel, #profilePictureInput{
+    color: white;
+    font-size: 12px;
+}
+
+#uploadLabel{
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+#submit{
+    font-size: 12px;
+}

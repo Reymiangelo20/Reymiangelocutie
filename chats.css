@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(46, 40, 40);
+    font-family: Poppins, sans-serif;
+    color: white;
+}
+
+.header{
+    display: flex;
+}
+
+.header img{
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+}
+
+.chat_container{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.chat_info{
+    background: rgb(82, 72, 72);
+    height: 85vh;
+    width: 70%;
+    overflow: hidden;
+}
+
+.inbox{
+    border-right: 1px solid white;
+    height: 85vh;
+    width: 30%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.inbox::-webkit-scrollbar {
+    width: 5px;
+}
+
+.inbox::-webkit-scrollbar-thumb {
+    background-color: #888; 
+}
+
+.inbox::-webkit-scrollbar-track {
+    background: rgb(102, 91, 91);
+    
+}
+
+.new_message{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.new_message label{
+    cursor: pointer;
+    margin-left:10px ;
+}
+
+.new_message button{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.inbox_messages{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.inbox_messages img{
+    border: 1px solid white;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.inbox_chat{
+    overflow: hidden;
+    width: 280px;
+    
+}
+
+.inbox_chat p {
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+.active{
+    background: rgb(122, 97, 97);
+    height: 75px;
+}
+
+.chats{
+    position: fixed;
+    top: 100px;
+    margin-left: 21%;
+    height: 85vh;
+    width: 49%;
+    overflow: hidden;
+}
+
+.chat_header{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.chat_header img{
+    border: 1px solid white;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.active_info{
+    display: flex;
+    font-size: 14px;
+}
+
+.activeNow{
+    display: flex;
+    display: ;
+}
+
+.not_active{
+    display: flex;
+    display: none;
+}
+
+.green_active{
+    color: yellow;
+    margin-right: 5px;
+}
+
+.dark_active{
+    color: darksalmon;
+    margin-right: 5px;
+}
+
+.user_messages{
+    height: 60vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.user_messages::-webkit-scrollbar {
+    width: 10px;
+}
+
+.user_messages::-webkit-scrollbar-thumb {
+    background-color: #888; 
+}
+
+.user_messages::-webkit-scrollbar-track {
+    background: rgb(102, 91, 91);
+    
+}
+.your_row{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.your_message_info{
+    display: inline-block;
+    border: 1px solid white;
+    max-width: 500px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 30px;
+}
+
+.your_message{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+}
+
+.your_message img{
+    border: 1px solid white;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-right: 5px;
+    align-self: flex-start;
+}
+
+.my_row {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.my_message_info{
+    display: inline-block;
+    border: 1px solid white;
+    max-width: 500px;
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+.my_message{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.my_message img{
+    border: 1px solid white;
+    border-radius: 100%;
+    object-fit: cover;
+    align-self: first baseline;
+    display: none;
+}
+
+.send_message form{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.send_message textarea{
+    margin-top: 10px;
+    width: 85%;
+    height: 12vh;
+    resize: none;
+    background: none;
+    margin-left: 10px;
+    color: white;
+}
+
+.send_message  textarea:focus{
+    border: 1px solid white;
+    outline: none;
+}
+
+.send_message textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+.send_message textarea::-webkit-scrollbar-thumb {
+    background-color: #888; 
+}
+
+.send_message textarea::-webkit-scrollbar-track {
+    background: rgb(102, 91, 91);
+}
+
+.send_message button{
+    padding: 10px 10px 10px 10px;
+    margin-left: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.send_message button:hover{
+    color: gray;
+}
+
+.no_message {
+   position: fixed;
+   top: 50%;
+   left: 65%;
+   transform: translate(-65%, -50%);
+   text-align: center;
+   display: none;
+}
+
+.no_message span{
+    font-size: 100px;
+}
+
+/* NEW MESSAGE MODAL */
+.newMessage_modal{
+    position: absolute;
+    background: rgb(82, 72, 72);
+    height: 300px;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)scale(0.1);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.newMessage_modal-open{
+    visibility: visible;
+    transform: translate(-50%, -50%)scale(1);
+}
+
+.new_message_info{
+  margin-top: 10px;
+}
+
+.new_message_info label{
+    margin-left: -20px;
+    margin-top: 20px;
+}
+
+.new_message_info input{
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    width: 300px;
+}
+
+#email{
+    margin-left: 70px;
+    height: 25px;
+}
+
+#email:focus{
+    border: 1px solid white;
+    outline: none;
+}
+
+.bagong_mensahe{
+    display: flex;
+}
+
+#bagong_message{
+    height: 100px;
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    width: 300px;
+    margin-left: 10px;
+    resize: none;
+}
+
+#bagong_message:focus{
+    border: 1px solid white;
+    outline: none;
+}
+
+.newMessage_button{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.newMessage_button button{
+    height: 30px;
+    width: 70px;
+}
+
+.sendbtn{
+    background: rgb(172, 119, 119);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sendbtn:hover{
+    background: rgb(133, 94, 94);
+}
+
+.cancelbtn{
+    background: darkcyan;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cancelbtn:hover{
+    background: rgb(4, 105, 105);
+}
