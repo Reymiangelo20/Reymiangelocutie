@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(46, 40, 40);
+    font-family: Poppins, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    height: 520px;
+    width: 800px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  
+}
+
+.sign-in,
+.sign-up {
+    position: absolute;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.sign-in {
+    width: 50%;
+    z-index: 1;
+    left: 0;
+}
+
+.welcome{
+    position: relative;
+    top: -30px;
+}
+
+.account-login{
+    position: relative;
+    margin: 10px;
+}
+
+.account-login label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    padding: 0 5px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+.account-login input{
+    height: 40px;
+    width: 220px;
+    outline: none;
+    padding: 0 10px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.account-login input:focus~label,
+.account-login input:valid~label{
+    top: 0;
+    background: #fff;
+    color: blueviolet;
+    font-size: 13px;
+}
+
+.account-login input:focus{
+    outline: none;
+    border: 1px solid blueviolet;
+}
+
+.forgot{
+    font-size: 15px;
+    margin-left: 130px;
+}
+.forgot:hover{
+    color: black;
+}
+.login_button{
+    margin-top: 10px;
+    height: 29px;
+    width: 65px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.login_button:hover{
+    background: darkblue;
+}
+
+.technician{
+    position: absolute;
+    margin-top: 400px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(46, 40, 40);;
+}
+
+.technician i{
+    font-size: 20px;
+    color: rgb(46, 40, 40);;
+}
+
+.technician:hover,
+.technician:hover i {
+    color: blue;
+}
+
+
+#signUp{
+    margin-top: 15px;
+    height: 29px;
+    width: 65px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background: rgb(129, 115, 115);
+    color: white;
+    cursor: pointer;
+}
+
+#signUp:hover{
+    background: rgb(102, 91, 91);
+}
+
+#signIn{
+    margin-top: 15px;
+    height: 29px;
+    width: 65px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background: rgb(129, 115, 115);
+    color: white;
+    cursor: pointer;
+}
+
+#signIn:hover{
+    background: rgb(102, 91, 91);
+}
+
+.sign-up {
+    width: 50%;
+    opacity: 0;
+    z-index: 2;
+    right: 0;
+}
+
+.sign-up h1{
+    margin-top: -35px;
+}
+
+.account-signup{
+    position: relative;
+    margin: 10px;
+}
+
+.account-signup label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    padding: 0 5px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+.account-signup input{
+    height: 30px;
+    width: 250px;
+    outline: none;
+    padding: 0 10px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.account-signup input:focus~label,
+.account-signup input:valid~label{
+    top: 0;
+    background: #fff;
+    color: blueviolet;
+    font-size: 13px;
+}
+
+.account-signup input:focus{
+    outline: none;
+    border: 1px solid blueviolet;
+}
+
+.create_account{
+    position: relative;
+    top: -35px;
+    left: 140px;
+    height: 29px;
+    width: 110px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.create_account:hover{
+    background: darkblue;
+}
+
+form {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    text-align: center;
+}
+
+.container.right-panel-active .sign-in {
+    transform: translateX(0);
+}
+
+.container.right-panel-active .sign-up {
+    transform: translateX(0); 
+    opacity: 1;
+    z-index: 5;
+}
+
+.overlay-container {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 50%;
+    background: rgb(82, 72, 72);
+    width: 400px;
+    height: 520px;
+    transition: transform 0.5s ease-in-out, background 0.5s ease-in-out;
+    z-index: 100;
+}
+
+.container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+
+.overlay {
+    position: absolute;
+    color: #fff;
+    height: 500px;
+    width: 400px;
+    left: 100%;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.overlay-left,
+.overlay-right {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 500px;
+    width: 400px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.overlay-left {
+  transform: translateX(0);
+}
+
+.overlay-right {
+    transform: translateX(-400px); 
+}
+
+.container.right-panel-active .overlay-right {
+    transform: translateX(20%);
+}
+
+.container.right-panel-active .overlay-left {
+    transform: translateX(-600px);
+}
+
+.popup-password{
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    height: 130px;
+    background: rgb(82, 72, 72);
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 999;
+    left: 50%;
+    color: white;
+    visibility: hidden;
+    transform: translate(-50%)scale(0.1);
+    transition: 0.5s;
+}
+
+.ok{
+    margin-top: 15px;
+    height: 29px;
+    width: 65px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background: rgb(129, 115, 115);
+    color: white;
+    cursor: pointer 
+}
+
+.ok:hover{
+    background: rgb(102, 91, 91);
+}
+
+.open-popup-password{
+    visibility: visible;
+    transform: translate(-50%)scale(1);
+}
+
+.container-main{
+    filter: blur(5px);
+    pointer-events: none;
+
+}
+.valid-email{
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    height: 130px;
+    background: rgb(82, 72, 72);
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 999;
+    left: 50%;
+    color: white;
+    visibility: hidden;
+    transform: translate(-50%)scale(0.1);
+    transition: 0.5s;
+}
+
+.open-valid-email{
+    visibility: visible;
+    transform: translate(-50%)scale(1);
+}
+
+.contact_number-length{
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    height: 130px;
+    background: rgb(82, 72, 72);
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 999;
+    left: 50%;
+    color: white;
+    visibility: hidden;
+    transform: translate(-50%)scale(0.1);
+    transition: 0.5s;
+}
+
+.open-contact_number-length{
+    visibility: visible;
+    transform: translate(-50%)scale(1);
+}
+
+.email_not_verified{
+    position: relative;
+    background:yellowgreen;
+    width: 250px;
+    border-radius: 5px;
+    display: none;
+    font-weight: bold;
+}
+
+.form_button{
+    display: none;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: max-content;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.icon:hover + .tooltip {
+    visibility: visible;
+}
+
+.wait_for_admin{
+    background:yellowgreen;
+    width: 300px;
+    border-radius: 5px;
+    display: none;
+    font-weight: bold;
+}
+
+.wrong{
+    background:yellowgreen;
+    width: 230px;
+    border-radius: 5px;
+    display: none;
+    font-weight: bold;
+}
+
+.already_account{
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    height: 130px;
+    background: rgb(82, 72, 72);
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 999;
+    left: 50%;
+    color: white;
+    visibility: hidden;
+    transform: translate(-50%)scale(0.1);
+    transition: 0.5s;
+}
+
+.already_account-open{
+    transform: translate(-50%)scale(1);
+    visibility: visible;
+}
+
+.password_length{
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    height: 130px;
+    background: rgb(82, 72, 72);
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 999;
+    left: 50%;
+    color: white;
+    visibility: hidden;
+    transform: translate(-50%)scale(0.1);
+    transition: 0.5s;
+}
+
+.password_length-open{
+    transform: translate(-50%)scale(1);
+    visibility: visible;
+}

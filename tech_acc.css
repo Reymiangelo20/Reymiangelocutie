@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body {
+    background: rgb(46, 40, 40);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+.container{
+    border: 2px solid black;
+    background: rgb(83, 81, 81);
+    height: 600px;
+    max-width: 800px;
+    margin-top: 100px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.main-content {
+    flex: 1;
+    padding: 20px;
+   
+}
+.sidebar {
+    width: 100px;
+    padding: 15px;
+    background-color: rgb(46, 40, 40);
+    border-right: 1px solid #ddd;
+}
+.sidebar a i {
+   
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.sidebar a i:hover::after {
+    content: attr(title);
+    position: fixed;
+    top: calc(100% + 10px);
+    left: calc(50% - 50px); 
+    font-size: 15px;
+    padding: 5px 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 999;
+}
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+hr{
+    border-bottom: 2px solid black;
+    width: 70%
+}
+.info{
+    margin-top: 5px;
+    margin-left: 220px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+}
+
+#profilePicture{
+    margin-left: 10px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 180px;
+    height: 150px;
+}
+
+#profilePictureInput{
+    margin-top: 55px;
+    margin-left: 10px;
+}
+
+.file-input-container {
+   
+     width: 200px;
+     overflow: hidden; 
+     text-overflow: ellipsis;
+     white-space: nowrap; 
+    }
+
+#uploadLabel, #profilePictureInput{
+    color: white;
+    font-size: 12px;
+}
+
+#uploadLabel{
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+#submit{
+    font-size: 12px;
+}
+.data {
+    color: white;
+    font-size: 10px;
+    margin-left: 60px;
+    margin-top: 40px;
+    height: 250px;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: rgb(46, 40, 40);
+}
+
+.data h3 {
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+ 
+}
+
+.data p {
+    margin: 0;
+    padding: 5px;
+    font-size: 25px;
+}
+
+hr {
+    border-color: white;
+}
+

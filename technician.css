@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(46, 40, 40);
+    font-family: Poppins, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+}
+
+.container{
+    margin-top: 10px;
+    background: rgb(83, 81, 81);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 1000px;
+    height: 680px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.container::-webkit-scrollbar {
+    width: 10px;
+    margin-left: -100px;
+    position: absolute;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #888; 
+}
+
+.container::-webkit-scrollbar-track {
+    background: rgb(102, 91, 91);
+}
+
+.title{
+    text-align: center;
+}
+
+.application_form{
+    margin-top: 50px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 100px;
+}
+
+.first_column > div {
+    margin-bottom: 10px; 
+    display: flex;
+    align-items: center;
+}
+
+.first_column select{
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    background: rgb(124, 111, 111);
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+}
+
+.first_column input{
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    background: rgb(124, 111, 111);
+    border: 1px solid black;
+    color: white;
+}
+
+.first_column select:focus,
+.first_column input:focus{
+    border: 1px solid white;
+    outline: none;
+}
+#status{
+    margin-left: 53px;
+}
+
+#technician{
+    margin-left: 42px;
+}
+
+#firstname{
+    margin-left: 20px;
+}
+
+#lastname{
+    margin-left: 20px;
+}
+
+#suffix{
+    margin-left: 62px;
+}
+
+#address{
+    margin-left: 15px;
+}
+
+#region{
+    margin-left: 50px;
+}
+#barangay{
+    margin-left: 78px;
+}
+
+#city{
+    margin-left: 125px;
+}
+
+#province{
+    margin-left: 35px;
+}
+
+.second_column > div {
+    margin-bottom: 10px; 
+    display: flex;
+    align-items: center;
+}
+
+.second_column select{
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    background: rgb(124, 111, 111);
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+}
+
+.second_column input{
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    background: rgb(124, 111, 111);
+    border: 1px solid black;
+    color: white;
+}
+
+.second_column select:focus,
+.second_column input:focus{
+    border: 1px solid white;
+    outline: none;
+}
+
+#business_name{
+    margin-left: 34px;
+}
+
+#contact_number{
+    margin-left: 20px;
+}
+
+#contact_number::placeholder{
+    color: rgb(202, 197, 197);
+}
+
+#social_media{
+    margin-left: 20px;
+}
+
+#email{
+    margin-left: 110px;
+}
+
+#email::placeholder{
+    color: rgb(202, 197, 197);
+}
+
+#username{
+    margin-left: 70px;
+}
+
+#password{
+    margin-left: 75px;
+}
+
+#confirm_password{
+    margin-left: 5px;
+}
+.photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.photos > div{
+    margin-bottom: 30px;
+}
+
+#profile_input[type="file"]{
+    display: none;
+}
+
+.profile{
+    padding: 5px 10px 5px 10px;
+    background: rgb(124, 111, 111);
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.profile:hover{
+    background: rgb(80, 72, 72);
+}
+
+#valid[type="file"]{
+    display: none;
+}
+
+.profile_photo{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 300px;
+    padding-top: 5px;
+}    
+
+.valid_id{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 300px;
+    padding-top: 5px;
+}
+
+.valid_row{
+    margin-left: 40px;
+}
+
+.file_name,
+.file_valid,
+.file_business,
+.file_cv{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.business_permit{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 350px;
+    padding-top: 5px;
+}
+
+
+.curriculum_vitae{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 300px;
+    padding-top: 5px;
+}
+
+.curriculum_row{
+    margin-left: 40px;
+}
+
+.ID{
+    padding: 5px 10px 5px 10px;
+    background: rgb(124, 111, 111);
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.ID:hover{
+    background: rgb(80, 72, 72);
+}
+
+
+#business_permit[type="file"]{
+    display: none;
+}
+
+.business{
+    padding: 5px 10px 5px 10px;
+    background: rgb(124, 111, 111);
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.business:hover{
+    background: rgb(80, 72, 72);
+}
+
+
+#resume{
+    display: none;
+}
+
+.upload_cv{
+    padding: 5px 10px 5px 10px;
+    background: rgb(124, 111, 111);
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.upload_cv:hover{
+    background: rgb(80, 72, 72);
+}
+
+.services{
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.services label{
+    position: absolute;
+    left: 50px;
+    top: -60px;
+}
+
+#service{
+    resize: none;
+    width: 900px;
+    height: 150px;
+    border: 1px solid black;
+    color: white;
+    border-radius: 5px;
+    background: rgb(124, 111, 111);
+    margin-top: -60px;
+}
+
+#service:focus{
+    border: 1px solid white;
+    outline: none;
+}
+
+.account{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btnsubmit{
+    margin-left: 50%;
+    height: 29px;
+    width: 65px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background: rgb(124, 111, 111);
+    color: white;
+    cursor: pointer;
+}
+
+.btnsubmit:hover{
+    background: rgb(102, 91, 91);
+}
+
+.wrong{
+    position: absolute;
+    background: rgb(82, 72, 72);
+    border: 1px solid black;
+    text-align: center;
+    padding: 35px 30px 35px 30px;
+    border-radius: 10px;
+    transform: translate(0%)scale(0.1);
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.wrong_pass-open{
+    visibility: visible;
+    transform: translate(0%)scale(1);
+}
+
+.wrong_email-open{
+    visibility: visible;
+    transform: translate(0%)scale(1);
+}
+
+.wrong-empty{
+    visibility: visible;
+    transform: translate(0%)scale(1);
+}
+
+.wrong-contact{
+    visibility: visible;
+    transform: translate(0%)scale(1);
+}
+
+.ok{
+    margin-top: 10px;
+    height: 29px;
+    width: 65px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background: rgb(129, 115, 115);
+    color: white;
+    cursor: pointer 
+}
+
+.ok:hover{
+    background: rgb(102, 91, 91);
+}
+
+.container-main{
+    filter: blur(10px);
+    pointer-events: none;
+}
+
+#upload_form{
+    display: none;
+}
+
+#contact_number::-webkit-inner-spin-button,
+#contact_number::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.already_account{
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    height: 130px;
+    background: rgb(82, 72, 72);
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 999;
+    left: 50%;
+    color: white;
+    visibility: hidden;
+    transform: translate(-50%)scale(0.1);
+    transition: 0.5s;
+}
+
+.already_account-open{
+    transform: translate(-50%)scale(1);
+    visibility: visible;
+}
+
+.password_length{
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    height: 130px;
+    background: rgb(82, 72, 72);
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 999;
+    left: 50%;
+    color: white;
+    visibility: hidden;
+    transform: translate(-50%)scale(0.1);
+    transition: 0.5s;
+}
+
+.password_length-open{
+    transform: translate(-50%)scale(1);
+    visibility: visible;
+}

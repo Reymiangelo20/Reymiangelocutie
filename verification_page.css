@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(46, 40, 40);
+    font-family: Poppins, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(82, 72, 72);
+    text-align: center;
+    height: 220px;
+    width: 510px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    
+}
+
+.verify{
+    margin-top: 10px;
+}
+
+.verification_code{
+    width: 50%;
+    height: 25px;
+    margin-top: 10px;
+    font-size: 15px;
+    border: 1px solid black;
+    background: rgb(129, 115, 115);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+.submit{
+    background: rgb(129, 115, 115);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 70px;
+    height: 25px;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.submit:hover{
+    background: rgb(102, 91, 91);
+}
+
+.timer{
+    position: relative;
+    margin-top: 5px;
+}
+.resend{
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    color: wheat;
+    background: transparent;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: -80px;
+    visibility: hidden;
+}
+
+.resend:hover{
+    color: darkgrey;
+}
+
+.sending{
+    position: absolute;
+    color: wheat;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 210px;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+.form_button{
+    display: none;
+}
+
+.modal{
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    height: 130px;
+    background: rgb(82, 72, 72);
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 999;
+    left: 50%;
+    color: white;
+    visibility: hidden;
+    transform: translate(-50%)scale(0.1);
+    transition: 0.5s;
+}
+
+.open-modal{
+    visibility: visible;
+    transform: translate(-50%)scale(1);
+}
+
+.open-container{
+    filter: blur(20px);
+    pointer-events: none;
+}
+
+.ok{
+    margin-top: 15px;
+    height: 29px;
+    width: 65px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background: rgb(129, 115, 115);
+    color: white;
+    cursor: pointer 
+}
+
+.ok:hover{
+    background: rgb(102, 91, 91);
+}
+
+.success{
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    height: 150px;
+    background: rgb(82, 72, 72);
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 999;
+    left: 50%;
+    color: white;
+    visibility: hidden;
+    transform: translate(-50%)scale(0.1);
+    transition: 0.5s;
+}
+
+.success_done{
+    margin-top: 10px;
+}
+
+.open-success{
+    visibility: visible;
+    transform: translate(-50%)scale(1);
+}
+
+.success_technician{
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    height: 180px;
+    background: rgb(82, 72, 72);
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 999;
+    left: 50%;
+    color: white;
+    visibility: hidden;
+    transform: translate(-50%)scale(0.1);
+    transition: 0.5s;
+}
+
+.success_technician-open{
+    visibility: visible;
+    transform: translate(-50%)scale(1);
+}
